@@ -10,7 +10,7 @@ public class MyConnection {
     public static Connection getConnection() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/fileheader?useSSL=false", "root", "Tanu");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/fileheader?useSSL=true", "root", "Tanu");
 
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
@@ -29,9 +29,9 @@ public class MyConnection {
         }
     }
 
-    public static void main(String[] args) {
-        MyConnection.getConnection();
-    }
+//    public static void main(String[] args) {
+//        MyConnection.getConnection();
+//    }
 }
 
 
