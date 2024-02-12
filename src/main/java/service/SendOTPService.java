@@ -30,7 +30,7 @@ public class SendOTPService {
 
             protected PasswordAuthentication getPasswordAuthentication() {
 
-                return new PasswordAuthentication(from, "qoig nfvd hlvw tqbu");
+                return new PasswordAuthentication(from, "dczuedxoqjbtdpsv");
 
             }
 
